@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadrados nos cantos e centro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+
+    .caixa {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      background: white;
+      border: 0
+    }
+
+    .quadrado {
+      width: 100px;
+      height: 100px;
+      border: 4px solid black;
+      position: absolute;
+    }
+
+    .Crimson { background: #DC143C; top: 0; left: 0; }
+    .LightPink { background: #FFB6C1; top: 0; right: 0; }
+    .MediumOrchid   { background:   #BA55D3 ; bottom: 0; left: 0; }
+    .Purple   { background: #800080; bottom: 0; right: 0; }
+    .black { background: black;top: 50%; left: 50%;
+     transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="caixa">
+    <div class="quadrado Crimson"></div>
+    <div class="quadrado LightPink"></div>
+    <div class="quadrado MediumOrchid"></div>
+    <div class="quadrado Purple"></div>
+    <div class="quadrado black"></div>
+  </div>
+</body>
+</html>
